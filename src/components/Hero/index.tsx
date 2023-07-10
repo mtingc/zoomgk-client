@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ImagesHero } from "@/components";
+import { heroImages } from "@/constants";
 
 const Hero = () => {
   return (
@@ -33,7 +34,7 @@ const Hero = () => {
             </Link>
           </div>
         </div>
-        <ImagesHero />
+        <ImagesHero images={heroImages} />
       </div>
     </div>
   );
