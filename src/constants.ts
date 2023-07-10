@@ -63,4 +63,25 @@ const contentList: IContentList[] = [
     }
 ]
 
-export { logoBlanco, logoNegro, navigation, heroImages, contentImage, contentList };
+// Foooter
+import { BsInstagram, BsFacebook, BsYoutube } from "react-icons/bs";
+
+const socials = [
+  {
+    name: "Facebook",
+    href: "#",
+    icon: BsFacebook,
+  },
+  {
+    name: "Instagram",
+    href: "#",
+    icon: BsInstagram,
+  },
+  {
+    name: "Youtube",
+    href: "#",
+    icon: BsYoutube,
+  },
+];
+
+export { logoBlanco, logoNegro, navigation, heroImages, contentImage, contentList, socials };
