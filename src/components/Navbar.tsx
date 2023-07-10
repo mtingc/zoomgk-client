@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -9,9 +9,26 @@ import { navigation } from "@/constants";
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [scroll, setScroll] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const isScrolled = window.scrollY > 0;
+      setScroll(isScrolled);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
-    <header className="absolute inset-x-0 top-0 z-50 bg-neutral-800 text-neutral-200">
+    <header
+      className={`fixed inset-x-0 top-0 z-50 ${
+        scroll ? "bg-zgk-bk text-neutral-200" : "white-bg text-zgk-bk"
+      } transition-colors duration-300`}
+    >
       <nav
         className="flex items-center justify-between p-6 lg:px-8"
         aria-label="Global"
@@ -34,14 +51,17 @@ const Navbar = () => {
             <Link
               key={name}
               href={href}
-              className="text-sm font-semibold leading-6 hover:text-neutral-500 transition-all duration-300"
+              className="text-sm leading-6 hover:text-zgk-100 transition-all duration-300"
             >
               {name}
             </Link>
           ))}
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <Link href="/login" className="text-sm font-semibold leading-6">
+          <Link
+            href="/login"
+            className="text-sm font-semibold leading-6 hover:text-play-100 transition-colors duration-300"
+          >
             Iniciar sesión
           </Link>
         </div>
@@ -49,7 +69,7 @@ const Navbar = () => {
       <AnimatePresence>
         {mobileMenuOpen && (
           <motion.div
-            className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white text-neutral-900 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
+            className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white text-zgk-bk px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
             initial={{ x: "100%" }}
             animate={{ x: 0 }}
             exit={{ x: "100%" }}
@@ -72,7 +92,7 @@ const Navbar = () => {
                     <Link
                       key={name}
                       href={href}
-                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 hover:bg-gray-50"
+                      className="-mx-3 block rounded-lg px-3 py-2 text-base leading-7 hover:bg-gray-50"
                     >
                       {name}
                     </Link>
