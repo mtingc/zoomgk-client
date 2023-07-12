@@ -5,7 +5,7 @@ const logoNegro = '/Logotipo_negro.svg';
 
 const navigation = [
     { name: 'Inicio', href: '/' },
-    { name: 'Nosotros', href: '/about-us' },
+    //{ name: 'Zoom Live', href: '/live' },
     { name: 'Contacto', href: '/contact' },
 ]
 
@@ -84,4 +84,23 @@ const socials = [
   },
 ];
 
-export { logoBlanco, logoNegro, navigation, heroImages, contentImage, contentList, socials };
+const usImages: IImage[] = [
+    {
+        src: 'https://images.unsplash.com/photo-1670272502246-768d249768ca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1152&q=80',
+        alt: 'Hero 1'
+    },
+    {
+        src: 'https://images.unsplash.com/photo-1605656816944-971cd5c1407f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=768&h=604&q=80',
+        alt: 'Hero 1'
+    },
+    {
+        src: 'https://images.unsplash.com/photo-1568992687947-868a62a9f521?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1152&h=842&q=80',
+        alt: 'Hero 1'
+    },
+    {
+        src: 'https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=768&h=604&q=80',
+        alt: 'Hero 1'
+    }
+];
+
+export { logoBlanco, logoNegro, navigation, heroImages, contentImage, contentList, usImages, socials };

@@ -19,16 +19,6 @@ const Content = () => {
             </p>
             <div className="max-w-xl text-base leading-7 lg:max-w-none">
               <ContentList list={contentList} />
-              <p className="mt-8">
-                Somos un estudio de fotografía y video especializado en eventos
-                sociales, hemos perfeccionado nuestras habilidades para capturar
-                cada detalle, cada emoción y cada momento especial de tus
-                celebraciones.
-              </p>
-              <p className="mt-4">
-                Estamos comprometidos a brindarte un servicio personalizado y de
-                calidad, que refleje tu estilo y personalidad.
-              </p>
             </div>
           </div>
         </div>

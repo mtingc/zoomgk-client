@@ -10,13 +10,14 @@ const ImagesHero = ({ images }: { images: IImage[] }) => {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 1 }}
+          whileHover={{ scale: 1.1 }}
           className="relative"
         >
           <Image
             src={images[0].src}
             alt={images[0].alt}
-            className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
+            className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-xl"
             width={1920}
             height={1080}
           />
@@ -27,13 +28,14 @@ const ImagesHero = ({ images }: { images: IImage[] }) => {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
+          transition={{ duration: 1, delay: 0.2 }}
+          whileHover={{ scale: 1.1 }}
           className="relative"
         >
           <Image
             src={images[1].src}
             alt={images[1].alt}
-            className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
+            className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-xl"
             width={1920}
             height={1080}
           />
@@ -42,13 +44,14 @@ const ImagesHero = ({ images }: { images: IImage[] }) => {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.4 }}
+          transition={{ duration: 1, delay: 0.4 }}
+          whileHover={{ scale: 1.1 }}
           className="relative"
         >
           <Image
             src={images[2].src}
             alt={images[2].alt}
-            className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
+            className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-xl"
             width={1920}
             height={1080}
           />
@@ -59,13 +62,14 @@ const ImagesHero = ({ images }: { images: IImage[] }) => {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
+          transition={{ duration: 1, delay: 0.2 }}
+          whileHover={{ scale: 1.1 }}
           className="relative"
         >
           <Image
             src={images[3].src}
             alt={images[3].alt}
-            className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
+            className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-xl"
             width={1920}
             height={1080}
           />
@@ -74,13 +78,14 @@ const ImagesHero = ({ images }: { images: IImage[] }) => {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.4 }}
+          transition={{ duration: 1, delay: 0.4 }}
+          whileHover={{ scale: 1.1 }}
           className="relative"
         >
           <Image
             src={images[4].src}
             alt={images[4].alt}
-            className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
+            className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-xl"
             width={1920}
             height={1080}
           />

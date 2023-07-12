@@ -60,9 +60,9 @@ const Navbar = () => {
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <Link
             href="/login"
-            className="text-sm font-semibold leading-6 hover:text-play-100 transition-colors duration-300"
+            className="text-sm leading-6 hover:text-play-100 transition-colors duration-300"
           >
-            Iniciar sesión
+            Zoom <strong className="font-semibold text-play-100">Live</strong>
           </Link>
         </div>
       </nav>
@@ -101,9 +101,9 @@ const Navbar = () => {
                 <div className="py-6">
                   <Link
                     href="/login"
-                    className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 hover:bg-gray-50"
+                    className="-mx-3 block rounded-lg px-3 py-2.5 text-base leading-7 hover:bg-gray-50"
                   >
-                    Iniciar sesión
+                    Zoom <strong className="font-semibold text-play-100">Live</strong>
                   </Link>
                 </div>
               </div>
