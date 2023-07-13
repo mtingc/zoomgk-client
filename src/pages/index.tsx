@@ -1,13 +1,12 @@
-import { Navbar, Footer, Content, Hero, Us } from "@/components";
+import { WebLayout } from "@/layouts";
+import { Content, Hero, Us } from "@/components";
 
 export default function Home() {
   return (
-    <div>
-      <Navbar />
+    <WebLayout>
       <Hero />
       <Content />
       <Us />
-      <Footer />
-    </div>
-  )
+    </WebLayout>
+  );
 }

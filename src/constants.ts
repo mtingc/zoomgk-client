@@ -6,7 +6,7 @@ const logoNegro = '/Logotipo_negro.svg';
 const navigation = [
     { name: 'Inicio', href: '/' },
     //{ name: 'Zoom Live', href: '/live' },
-    { name: 'Contacto', href: '/contact' },
+    { name: 'Contacto', href: '/contacto' },
 ]
 
 // Hero section
@@ -103,4 +103,9 @@ const usImages: IImage[] = [
     }
 ];
 
-export { logoBlanco, logoNegro, navigation, heroImages, contentImage, contentList, usImages, socials };
+const contactImage: IImage = {
+    src: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=focalpoint&fp-x=.4&w=2560&h=3413&&q=80',
+    alt: 'Hero 1'
+};
+
+export { logoBlanco, logoNegro, navigation, heroImages, contentImage, contentList, usImages, socials, contactImage };
